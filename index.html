@@ -18,7 +18,9 @@ border-radius: 10px;
 box-shadow: 0 0 10px rgba(0,0,0,0.1);
 width: 300px;
 }
-input, select, textarea {
+input:not([type="radio"]),
+select,
+textarea {
 width: 100%;
 padding: 10px;
 margin-top: 10px;
@@ -48,7 +50,12 @@ text-align: center;
 <label for="name">Full Name</label>
 <input type="text" id="name" name="name" required>
 <label for="email">Email Address</label>
-<input type="email" id="email" name="email" required>
+<input type="email" id="email" name="email" required><br><br>
+<label for="name">Gender:</label>
+<input type="radio"name="gender"value="male">male
+<input type="radio"name="gender"value="female">female
+<input type="radio"name="gender"value="others">others
+<br><br>
 <label for="phone">Phone Number</label>
 <input type="tel" id="phone" name="phone" required>
 <label for="event">Choose Event</label>
